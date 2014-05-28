@@ -9,23 +9,34 @@ var options = {
 	target: $('.container'),
 	}
 
-function imageslideshow () {
+function imageSlideshow () {
 	photos.forEach(function (photo) {
 		options.target.append("<img src=" + photo + "/>")
 	});
 }
 
-(function() {
-    function fade() {
-        $('.container :first-child').fadeOut(2500).next('img').fadeIn(2500).end().appendTo('.container');
-    }
+function fade() {
+    $('.container').fadeOut(2500).next('img').fadeIn(2500).end().appendTo('.container');
+    
     setTimeout(function() {
         fade();
         setInterval(fade, 3000);
     }, 9000);
-});
+};
 
-imageslideshow();
+imageSlideshow();
 
 
 
+
+
+function slideshow (array) {
+	if 
+		($.isArray(array)) {
+		throw new error ('Not an array!');
+	} else {
+
+		($.isArray([])) 
+		throw new error ('Array is empty!');
+	}
+}
