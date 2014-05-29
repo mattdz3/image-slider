@@ -10,6 +10,9 @@ var options = {
 	target: $('.container'),
 }
 
+var imageCount = photos.length,
+	counter = 1;
+
 function Image () {
 	photos.forEach(function (photo) {
 		options.target.append("<img src=" + photo + "/>")
@@ -28,7 +31,7 @@ function slideshow (array) {
 	}
 }
 
-/*function Images(array) {
-	this.imageArray = array;
+// function Images(delay) {
+// 	$('.container').attr(photos[0]);
 
-}*/
+// }

@@ -14,20 +14,21 @@ is it too broad or too granular? */
 	describe('Image constructor', function() {
 		it('should loop through image array', function() {
 
-			function Images(array) {
-				this.array = array;	
+			function Images(loop) {
+				this.loop = loop;	
 			}
 
-			Image = new Images('image');
+			stuff = new Images('image');
 
-			expect(Image).to.be.an.instanceof(Images);
+			expect(stuff).to.be.an.instanceof(Images);
 		})
 	})
 })();
 
 
 
-/*(function () {
+
+(function () {
 
   describe('Image function', function () {
     it('should inject the correct # of image tags', function () {
@@ -63,7 +64,7 @@ is it too broad or too granular? */
 
 		});
 	});
-})();*/
+})();
 /*	describe('slide function', function() {
 
 		it('should show an image for 2 sec before toggling to another', function() {
