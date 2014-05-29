@@ -5,16 +5,29 @@ how do you want it to behave?
 What are the args and returns?
 is it too broad or too granular? */
 
-(function () {
-	'use strict';
 
-	describe('Image constructor', function(){
-		it('should ')
+
+'use strict';
+
+
+(function() {
+	describe('Image constructor', function() {
+		it('should loop through image array', function() {
+
+			function Images(array) {
+				this.array = array;	
+			}
+
+			Image = new Images('image');
+
+			expect(Image).to.be.an.instanceof(Images);
+		})
 	})
-})
+})();
 
 
-(function () {
+
+/*(function () {
 
   describe('Image function', function () {
     it('should inject the correct # of image tags', function () {
@@ -50,7 +63,20 @@ is it too broad or too granular? */
 
 		});
 	});
-})();
+})();*/
+/*	describe('slide function', function() {
+
+		it('should show an image for 2 sec before toggling to another', function() {
+
+			var slide = function(){
+				$('.container').setTimeout(2000)
+					$('.container').slideToggle("slow");
+			}
+			expect(slide).to.
+		})
+	})*/
+
+
 
 
 
