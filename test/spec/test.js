@@ -5,19 +5,25 @@ how do you want it to behave?
 What are the args and returns?
 is it too broad or too granular? */
 
+(function () {
+	'use strict';
+
+	describe('Image constructor', function(){
+		it('should ')
+	})
+})
 
 
 (function () {
-    'use strict';
 
-    describe('imageSlideshow function', function () {
-        it('should inject the correct # of image tags', function () {
+  describe('Image function', function () {
+    it('should inject the correct # of image tags', function () {
 
-        	var total = $('.container img').length;
+      var total = $('.container img').length;
 
-        	expect(total).to.equal(2);
-        });
+      expect(total).to.equal(3);
     });
+  });
 })();
 
 
@@ -45,3 +51,15 @@ is it too broad or too granular? */
 		});
 	});
 })();
+
+
+
+
+
+
+
+
+
+
+
+
